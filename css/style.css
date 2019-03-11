@@ -20,6 +20,9 @@ header > h3 {
     letter-spacing: 3px;
     /* font-weight: normal; */
 }
+.menu-bar{
+    display:none;
+}
 
 i {
     position: absolute;
@@ -89,4 +92,27 @@ a.button {
 
 .ladies-tshirts {
     grid-area: 5/2/6/3;
+}
+
+@media  (max-width:767px){
+    nav{
+        display: none;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-bar{
+        display: block;
+        margin-left: 20px;
+    }
+    .menu-bar > p {
+        font-size: 1.5em;
+        color: black;
+    }
+    i {
+        position: static;
+        margin-right: 20px;
+    }
 }
