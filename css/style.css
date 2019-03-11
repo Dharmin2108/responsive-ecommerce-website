@@ -82,3 +82,11 @@ a.button {
 .ladies{
     grid-area: 4/1/5/3;
 }
+
+.mans-tshirts {
+    grid-area: 5/1/6/2;
+}
+
+.ladies-tshirts {
+    grid-area: 5/2/6/3;
+}
