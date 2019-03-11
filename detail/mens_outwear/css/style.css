@@ -55,3 +55,56 @@ nav {
     color: black;
     font-size: 0.9em;
 }
+
+/* .product {
+    display: flex;
+    justify-content: center;
+} */
+
+.product-img{
+    grid-area: 3/1/4/2;
+    margin-top: 30px;
+}
+
+.product-img > img {
+    width:85%;
+    float: right;
+}
+.product-detail {
+    grid-area: 3/2/4/3;
+    display:flex;
+    flex-direction: column;
+    width:75%;
+    margin: 30px 30px 0px 30px;
+    
+}
+.product-detail > h3 {
+    font-size: 24px;
+    color: rgb(63, 61, 61);
+    font-weight:500;
+}
+
+.gray-font {
+    color:gray;
+    margin-right: 10px;
+}
+
+.product-detail > p {
+    margin-bottom: 25px;
+}
+
+.size-dropdown,.quantity-dropdown{
+    display: flex;
+    align-items: center;
+     border-top: 0.8px solid rgb(167, 166, 166);
+    border-bottom: 0.8px solid rgb(167, 166, 166);
+    border-collapse: collapse;
+}
+
+.dropdowns {
+    height: 4em;
+    width: 100%;
+    border: none;
+    background: none;
+    
+}
