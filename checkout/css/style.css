@@ -41,15 +41,53 @@ i {
     padding-top: 50px;
 }
 
-.checkout-title > h3{
+.checkout-title>h3 {
     font-size: 1.2em;
     font-weight: 500;
     color: rgb(22, 22, 22);
     margin-bottom: 10px;
 }
 
-.checkout-title > p{
-    margin:0px;
+.checkout-title>p {
+    margin: 0px;
     font-size: 0.9em;
     color: gray;
+}
+
+.acc-info {
+    grid-area: 3/1/4/2;
+    display: flex;
+    justify-content: center;
+}
+
+.info-form {
+    width: 60%;
+    padding-left: 30px;
+}
+
+.info-form>input {
+    border: none;
+    line-height: 2em;
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.info-form>h4,p {
+    margin-bottom: 0px;
+}
+
+.info-form>.short {
+    width: 49%;
+}
+
+.info-form>select {
+    width: 100%;
+    border: none;
+    background: none;
+    height: 4em;
+}
+
+.info-form>input[type=checkbox]{
+    width: 20px;
 }
