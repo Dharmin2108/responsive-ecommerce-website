@@ -91,7 +91,9 @@ i {
 .info-form>input[type=checkbox]{
     width: 20px;
 }
-
+.payment{
+    grid-area: 3/2/4/3;
+}
 .exp,.payment-form>input.exp{
     width: 31%;
 }
@@ -106,4 +108,50 @@ i {
     background: none;
     border: 2px solid black;
     padding: 10px 0px;
+}
+
+@media (max-width:767px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .info-form,.payment-form{
+        width:90%;
+        /* padding: 0px 25px; */
+    }
+    .info-form{
+        padding-left: 0px;
+    }/*
+    .payment-form{
+        margin-right: 25px;
+    } */
+    i{
+        position: static;
+        margin-right: 25px;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-bar{
+        display: block;
+        margin-left: 25px;
+    }
+    .menu-bar > p {
+        font-size: 1.5em;
+        color: black;
+        margin: 0px;
+    }
+    .payment-form>input[type=submit]{
+        position: fixed;
+        width: 100%;
+        bottom:0px;
+        left:0px;
+        background: rgb(15, 15, 100);
+        color:white;
+    }
+    .order-summary{
+        margin-bottom:50px;
+    }
 }
