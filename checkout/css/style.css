@@ -94,17 +94,17 @@ i {
 
 .payment {
     grid-area: 3/2/4/3;
+    width: 60%
 }
 
 .exp, .payment>input.exp {
-    width: 31%;
+    width: 32%;
 }
 
 .product-name-price {
     display: flex;
     justify-content: space-between;
 }
-
 .payment>input[type=submit] {
     width: 200px;
     background: none;
@@ -120,12 +120,11 @@ i {
     .info-form {
         width: 90%;
         /* padding: 0px 25px; */
-    }
-    .info-form {
         padding-left: 0px;
     }
     .payment {
         padding: 0px 25px;
+        width: 86%;
     }
     i {
         position: static;
