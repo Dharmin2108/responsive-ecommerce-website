@@ -60,12 +60,12 @@ i {
     justify-content: center;
 }
 
-.info-form,.payment-form {
+.info-form {
     width: 60%;
     padding-left: 30px;
 }
 
-.info-form>input,.payment-form>input {
+.info-form>input, .payment>input {
     border: none;
     line-height: 2em;
     border-bottom: 1px solid lightgray;
@@ -73,7 +73,7 @@ i {
     margin-top: 40px;
 }
 
-.info-form>h4,p ,.payment-form>h4,p{
+.info-form>h4, p {
     margin-bottom: 0px;
 }
 
@@ -88,70 +88,75 @@ i {
     height: 4em;
 }
 
-.info-form>input[type=checkbox]{
+.info-form>input[type=checkbox] {
     width: 20px;
 }
-.payment{
+
+.payment {
     grid-area: 3/2/4/3;
 }
-.exp,.payment-form>input.exp{
+
+.exp, .payment>input.exp {
     width: 31%;
 }
 
-.product-name-price{
+.product-name-price {
     display: flex;
     justify-content: space-between;
 }
 
-.payment-form>input[type=submit]{
-    width:200px;
+.payment>input[type=submit] {
+    width: 200px;
     background: none;
     border: 2px solid black;
     padding: 10px 0px;
 }
 
-@media (max-width:767px){
-    .container{
+@media (max-width:767px) {
+    .container {
         display: flex;
         flex-direction: column;
     }
-    .info-form,.payment-form{
-        width:90%;
+    .info-form {
+        width: 90%;
         /* padding: 0px 25px; */
     }
-    .info-form{
+    .info-form {
         padding-left: 0px;
-    }/*
-    .payment-form{
-        margin-right: 25px;
-    } */
-    i{
+    }
+    .payment {
+        padding: 0px 25px;
+    }
+    i {
         position: static;
         margin-right: 25px;
     }
-    header{
+    header {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .menu-bar{
+    .menu-bar {
         display: block;
         margin-left: 25px;
     }
-    .menu-bar > p {
+    .menu-bar>p {
         font-size: 1.5em;
         color: black;
         margin: 0px;
     }
-    .payment-form>input[type=submit]{
+    .payment>input[type=submit] {
         position: fixed;
         width: 100%;
-        bottom:0px;
-        left:0px;
+        bottom: 0px;
+        left: 0px;
         background: rgb(15, 15, 100);
-        color:white;
+        color: white;
     }
-    .order-summary{
-        margin-bottom:50px;
+    .order-summary {
+        margin-bottom: 50px;
+    }
+    .checkout-title{
+        padding-top: 0px;
     }
 }
