@@ -15,11 +15,13 @@ header {
     position: relative;
     justify-content: center;
 }
+
 header a {
     color: black;
     text-decoration: none;
     margin: 0px 20px;
 }
+
 header>h3 {
     letter-spacing: 3px;
     /* font-weight: normal; */
@@ -68,23 +70,56 @@ i {
     width: 60%;
     padding-left: 30px;
 }
-
-.info-form>input, .payment>input {
+.input-box{
+    position: relative;
+}
+input {
     border: none;
     line-height: 2em;
     border-bottom: 1px solid lightgray;
     width: 100%;
     margin-top: 40px;
+    outline: none;
+}
+.input-box>label{
+    position: absolute;
+    left:0;
+    top:0;
+    padding-top:46px;
+    font-size: 0.9em;
+    transition: 0.1s;
+    visibility: hidden;
 }
 
+.input-box>input:focus ~ label,
+.input-box>input:valid ~ label{
+    visibility: visible;
+    top:-20px;
+    font-size: 1em;
+}
+
+/* .input-box>input:invalid ~ label{
+    visibility: visible;
+    top:-20px;
+    color:red;
+} */
+.input-box>input:focus::placeholder{
+    visibility: hidden;
+}
 .info-form>h4, p {
     margin-bottom: 0px;
 }
 
-.info-form>.short {
+.short {
+    display: inline-block;
     width: 49%;
 }
-
+#bill-add ~ .add{
+    visibility: hidden;
+}
+#bill-add:checked ~ .add{
+visibility: visible;
+}
 .dropdowns {
     width: 100%;
     border: none;
@@ -92,7 +127,7 @@ i {
     height: 4em;
 }
 
-.info-form>input[type=checkbox] {
+.diff-add>input[type=checkbox] {
     width: 20px;
 }
 
@@ -102,6 +137,7 @@ i {
 }
 
 .exp, .payment>input.exp {
+    display: inline-block;
     width: 32%;
 }
 
@@ -109,6 +145,7 @@ i {
     display: flex;
     justify-content: space-between;
 }
+
 .payment>input[type=submit] {
     width: 200px;
     background: none;
@@ -122,7 +159,7 @@ i {
         flex-direction: column;
         align-items: center;
     }
-    .acc-info{
+    .acc-info {
         width: 90%;
     }
     .info-form {
@@ -162,9 +199,9 @@ i {
         color: white;
     }
     .order-summary {
-        margin-bottom: 50px;
+        margin-bottom: 65px;
     }
-    .checkout-title{
+    .checkout-title {
         padding-top: 0px;
     }
 }
