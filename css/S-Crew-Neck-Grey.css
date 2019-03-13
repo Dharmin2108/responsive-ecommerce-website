@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
+    font-family: sans-serif;
 }
 
 .container {
@@ -87,8 +88,8 @@ nav {
 ul{
     margin-bottom: 50px;
 }
-.product-detail>p {
-    margin-bottom: 25px;
+.product-detail>p,h4 {
+    margin-bottom: 10px;
 }
 
 .size-dropdown {
@@ -116,6 +117,9 @@ ul{
     background: none;
     border: 2px solid black;
     padding: 10px 20px;
+}
+#size{
+    margin-left: 27px;
 }
 
 @media(max-width:767px) {

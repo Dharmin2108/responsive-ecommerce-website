@@ -33,35 +33,32 @@
                 <h4>Account Information</h4>
                 <div class="input-box">
                     <input id="email" type="email" placeholder="Email" autofocus required> <span
-                        class="bottom-transition"></span><br>
+                        class="bottom-transition-left"></span><span class="bottom-transition-right"></span><br>
                     <label for="email">Email</label>
                 </div>
                 <div class="input-box">
-                    <input id="phone" type="text" placeholder="Phone" required><span
-                        class="bottom-transition"></span><br>
+                    <input id="phone" type="number" placeholder="Phone" maxlength="10" required><span
+                        class="bottom-transition-left"></span><span class="bottom-transition-right"></span><br>
                     <label for="phone">Phone</label>
                 </div>
 
                 <h4>Shipping Information</h4>
                 <div class="input-box">
                     <input id="address" type="text" placeholder="Address" required><span
-                        class="bottom-transition"></span> <br>
+                        class="bottom-transition-left"></span><span class="bottom-transition-right"></span> <br>
                     <label for="address">Address</label>
                 </div>
                 <div class="input-box">
-                    <input id="city" type="text" placeholder="City" required> <span
-                        class="bottom-transition"></span><br>
+                    <input id="city" type="text" placeholder="City" required> <span class="bottom-transition-left"></span><span class="bottom-transition-right"></span></span><br>
                     <label for="city">City</label>
                 </div>
                 <div class="short-container">
                     <div class="input-box short">
-                        <input id="state" type="text" placeholder="State/Province" required><span
-                            class="bottom-transition"></span> <br>
+                        <input id="state" type="text" placeholder="State/Province" required><span class="bottom-transition-left"></span><span class="bottom-transition-right"></span> <br>
                         <label for="state">State/Province</label>
                     </div>
                     <div class="input-box short">
-                        <input id="zip" type="text" placeholder="Zip/Postal code" required><span
-                            class="bottom-transition"></span> <br>
+                        <input id="zip" type="text" placeholder="Zip/Postal code" required><span class="bottom-transition-left"></span><span class="bottom-transition-right"></span> <br>
                         <label for="zip">Zip/Postal code</label>
                     </div>
                 </div>
@@ -71,31 +68,27 @@
                         <option value="US">United States</option>
                         <option value="Canada">Canada</option>
                     </select>
-                    <span class="bottom-transition"></span>
+                    <span class="bottom-transition-left"></span><span class="bottom-transition-right"></span>
                 </div>
                 <h4>Billing Address</h4>
                 <div class="diff-add">
                     <input id="bill-add" type="checkbox"> <label for="bill-add">Use different billing address</label>
                     <div class="add">
                         <div class="input-box">
-                            <input id="address" type="text" placeholder="Address" required><span
-                                class="bottom-transition"></span> <br>
+                            <input id="address" type="text" placeholder="Address" required><span class="bottom-transition-left"></span><span class="bottom-transition-right"></span> <br>
                             <label for="address">Address</label>
                         </div>
                         <div class="input-box">
-                            <input id="city" type="text" placeholder="City" required> <span
-                                class="bottom-transition"></span><br>
+                            <input id="city" type="text" placeholder="City" required> <span class="bottom-transition-left"></span><span class="bottom-transition-right"></span><br>
                             <label for="city">City</label>
                         </div>
                         <div class="short-container">
                             <div class="input-box short">
-                                <input id="state" type="text" placeholder="State/Province" required><span
-                                    class="bottom-transition"></span> <br>
+                                <input id="state" type="text" placeholder="State/Province" required><span class="bottom-transition-left"></span><span class="bottom-transition-right"></span> <br>
                                 <label for="state">State/Province</label>
                             </div>
                             <div class="input-box short">
-                                <input id="zip" type="text" placeholder="Zip/Postal code" required><span
-                                    class="bottom-transition"></span> <br>
+                                <input id="zip" type="text" placeholder="Zip/Postal code" required><span class="bottom-transition-left"></span><span class="bottom-transition-right"></span> <br>
                                 <label for="zip">Zip/Postal code</label>
                             </div>
                         </div>
@@ -105,7 +98,7 @@
                                 <option value="US">United States</option>
                                 <option value="Canada">Canada</option>
                             </select>
-                            <span class="bottom-transition"></span>
+                            <span class="bottom-transition-left"></span><span class="bottom-transition-right"></span>
                         </div>
                     </div>
                 </div>
@@ -115,46 +108,45 @@
             <!-- <form class="payment-form"> -->
             <h4>Payment Method</h4>
             <div class="input-box">
-                <input id="cardholder" type="text" placeholder="Cardholder Name" required><span
-                    class="bottom-transition"></span> <br>
+                <input id="cardholder" type="text" placeholder="Cardholder Name" required><span class="bottom-transition-left"></span><span class="bottom-transition-right"></span> <br>
                 <label for="cardholder">Cardholder Name</label>
             </div>
             <div class="input-box">
-                <input id="cardnumber" type="text" placeholder="Card Number" required> <span
-                    class="bottom-transition"></span><br>
+                <input id="cardnumber" type="text" placeholder="Card Number" required> <span class="bottom-transition-left"></span><span class="bottom-transition-right"></span><br>
                 <label for="cardnumber">Card Number</label>
             </div>
 
             <p>Expiry</p>
             <div class="input-box exp">
-            <select class="dropdowns">
-                <option value="Jan">Jan</option>
-                <option value="Feb">Feb</option>
-                <option value="Mar">Mar</option>
-                <option value="Apr">Apr</option>
-                <option value="May">May</option>
-                <option value="May">Jun</option>
-                <option value="Jan">Jul</option>
-                <option value="Feb">Aug</option>
-                <option value="Mar">Sep</option>
-                <option value="Apr">Oct</option>
-                <option value="May">Nov</option>
-                <option value="May">Dec</option>
-            </select> <span class="bottom-transition"></span>
-        </div>
-        <div class="input-box exp">
-            <select class="dropdowns">
-                <option value="2016">2016</option>
-                <option value="2017">2017</option>
-                <option value="2018">2018</option>
-                <option value="2019">2019</option>
-                <option value="2020">2020</option>
-                <option value="2021">2021</option>
-                <option value="2022">2022</option>
-            </select> <span class="bottom-transition"></span>
-        </div>
+                <select class="dropdowns">
+                    <option value="Jan">Jan</option>
+                    <option value="Feb">Feb</option>
+                    <option value="Mar">Mar</option>
+                    <option value="Apr">Apr</option>
+                    <option value="May">May</option>
+                    <option value="May">Jun</option>
+                    <option value="Jan">Jul</option>
+                    <option value="Feb">Aug</option>
+                    <option value="Mar">Sep</option>
+                    <option value="Apr">Oct</option>
+                    <option value="May">Nov</option>
+                    <option value="May">Dec</option>
+                </select> <span class="bottom-transition-left"></span><span class="bottom-transition-right"></span>
+            </div>
             <div class="input-box exp">
-                <input id="cvv" type="text" placeholder="CVV" required> <span class="bottom-transition"></span><br>
+                <select class="dropdowns">
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                </select> <span class="bottom-transition-left"></span><span class="bottom-transition-right"></span>
+            </div>
+            <div class="input-box exp">
+                <input id="cvv" type="number" placeholder="CVV" required> <span
+                    class="bottom-transition-left"></span><span class="bottom-transition-right"></span><br>
                 <label for="cvv">CVV</label>
             </div>
 
