@@ -146,11 +146,11 @@ input {
 }
 
 #bill-add~.add {
-    visibility: hidden;
+    display: none;
 }
 
 #bill-add:checked~.add {
-    visibility: visible;
+    display:block;
 }
 
 .dropdowns {

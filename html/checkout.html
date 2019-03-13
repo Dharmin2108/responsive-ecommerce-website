@@ -74,7 +74,33 @@
                 <div class="diff-add">
                     <input id="bill-add" type="checkbox"> <label for="bill-add">Use different billing address</label>
                     <div class="add">
-                        <H1>Hello</H1>
+                        <div class="input-box">
+                            <input id="address" type="text" placeholder="Address" required><span
+                                class="bottom-transition"></span> <br>
+                            <label for="address">Address</label>
+                        </div>
+                        <div class="input-box">
+                            <input id="city" type="text" placeholder="City" required> <span
+                                class="bottom-transition"></span><br>
+                            <label for="city">City</label>
+                        </div>
+                        <div class="short-container">
+                            <div class="input-box short">
+                                <input id="state" type="text" placeholder="State/Province" required><span
+                                    class="bottom-transition"></span> <br>
+                                <label for="state">State/Province</label>
+                            </div>
+                            <div class="input-box short">
+                                <input id="zip" type="text" placeholder="Zip/Postal code" required><span
+                                    class="bottom-transition"></span> <br>
+                                <label for="zip">Zip/Postal code</label>
+                            </div>
+                        </div>
+                        <p>Country</p>
+                        <select class="dropdowns" name="country" id="country">
+                            <option value="US">United States</option>
+                            <option value="Canada">Canada</option>
+                        </select>
                     </div>
                 </div>
                 <!-- </form> -->
