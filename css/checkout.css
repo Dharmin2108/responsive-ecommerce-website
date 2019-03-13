@@ -22,7 +22,7 @@ header a {
     margin: 0px 20px;
 }
 
-header>h3 {
+header>a>h3 {
     letter-spacing: 3px;
     /* font-weight: normal; */
 }
@@ -96,21 +96,30 @@ input {
 
 .input-box>input:focus~label, .input-box>input:valid~label {
     visibility: visible;
-    top: -20px;
-    font-size: 1em;
+    top: -25px;
+    font-size: 0.75em;
 }
 
-/* .input-box>input:invalid ~ label{
+
+
+  
+/* .input-box>input:not(:empty) ~ label{
+    visibility: hidden;
+} */
+
+ 
+/*
+.input-box>input:valid ~ label{
     visibility: visible;
     top:-20px;
-    color:red;
+    color:black;
 } */
 
 .input-box>input:focus::placeholder {
     visibility: hidden;
 }
 
-.info-form>h4, p {
+.info-form>h4, p, .payment>h4, p {
     margin-bottom: 0px;
 }
 
@@ -119,11 +128,13 @@ input {
     width: 100%;
     text-align: center;
 }
-.short-container{
+
+.short-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .short {
     display: inline-block;
     width: 47%;
@@ -136,28 +147,35 @@ input {
     background: black;
     position: relative;
     top: -15px;
-    /* -webkit-transition: all ease-in-out .15s;
-  -o-transition: all ease-in-out .15s; */
-    transition: all ease-in-out .15s;
+    transition: all ease-in-out .10s;
 }
-
-.input-box>input:focus+.bottom-transition {
+.input-box>select{
+border:none;
+outline: none;
+}
+.input-box>input:focus+.bottom-transition,
+.input-box>select:focus+.bottom-transition {
     width: 100%;
 }
-
+#bill-add{
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top: 4px;
+}
 #bill-add~.add {
     display: none;
 }
 
 #bill-add:checked~.add {
-    display:block;
+    display: block;
 }
 
 .dropdowns {
     width: 100%;
     border: none;
     background: none;
-    height: 4em;
+    height: 2em;
 }
 
 .diff-add>input[type=checkbox] {
@@ -172,7 +190,7 @@ input {
 .exp, .payment>input.exp {
     display: inline-block;
     width: 32%;
-    top:20px;
+    top: 20px;
 }
 
 .product-name-price {
@@ -194,7 +212,7 @@ input {
         align-items: center;
     }
     .acc-info {
-        width: 90%;
+        width: 100%;
     }
     .info-form {
         width: 90%;
@@ -203,7 +221,7 @@ input {
     }
     .payment {
         /* padding: 0px 25px; */
-        width: 85%;
+        width: 90%;
     }
     i {
         position: static;

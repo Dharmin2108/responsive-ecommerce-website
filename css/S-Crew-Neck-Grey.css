@@ -17,7 +17,7 @@ header {
     align-items: center;
 }
 
-header>h3 {
+header>a>h3 {
     letter-spacing: 3px;
     /* font-weight: normal; */
 }
@@ -84,7 +84,9 @@ nav {
     color: gray;
     margin-right: 10px;
 }
-
+ul{
+    margin-bottom: 50px;
+}
 .product-detail>p {
     margin-bottom: 25px;
 }
@@ -129,8 +131,8 @@ nav {
         width: 100%;
     }
     .product-img>img {
-        float: none;
-        width: 90%;
+        
+        width: 100%;
         margin-left: 29px;
     }
     .product-detail {

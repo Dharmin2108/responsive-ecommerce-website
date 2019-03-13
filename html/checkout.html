@@ -66,10 +66,13 @@
                     </div>
                 </div>
                 <p>Country</p>
-                <select class="dropdowns" name="country" id="country">
-                    <option value="US">United States</option>
-                    <option value="Canada">Canada</option>
-                </select>
+                <div class="input-box">
+                    <select class="dropdowns" name="country" id="country">
+                        <option value="US">United States</option>
+                        <option value="Canada">Canada</option>
+                    </select>
+                    <span class="bottom-transition"></span>
+                </div>
                 <h4>Billing Address</h4>
                 <div class="diff-add">
                     <input id="bill-add" type="checkbox"> <label for="bill-add">Use different billing address</label>
@@ -97,10 +100,13 @@
                             </div>
                         </div>
                         <p>Country</p>
-                        <select class="dropdowns" name="country" id="country">
-                            <option value="US">United States</option>
-                            <option value="Canada">Canada</option>
-                        </select>
+                        <div class="input-box">
+                            <select class="dropdowns" name="country" id="country">
+                                <option value="US">United States</option>
+                                <option value="Canada">Canada</option>
+                            </select>
+                            <span class="bottom-transition"></span>
+                        </div>
                     </div>
                 </div>
                 <!-- </form> -->
@@ -120,14 +126,24 @@
             </div>
 
             <p>Expiry</p>
-            <select class="exp dropdowns">
+            <div class="input-box exp">
+            <select class="dropdowns">
                 <option value="Jan">Jan</option>
                 <option value="Feb">Feb</option>
                 <option value="Mar">Mar</option>
                 <option value="Apr">Apr</option>
                 <option value="May">May</option>
-            </select>
-            <select class="exp dropdowns">
+                <option value="May">Jun</option>
+                <option value="Jan">Jul</option>
+                <option value="Feb">Aug</option>
+                <option value="Mar">Sep</option>
+                <option value="Apr">Oct</option>
+                <option value="May">Nov</option>
+                <option value="May">Dec</option>
+            </select> <span class="bottom-transition"></span>
+        </div>
+        <div class="input-box exp">
+            <select class="dropdowns">
                 <option value="2016">2016</option>
                 <option value="2017">2017</option>
                 <option value="2018">2018</option>
@@ -135,7 +151,8 @@
                 <option value="2020">2020</option>
                 <option value="2021">2021</option>
                 <option value="2022">2022</option>
-            </select>
+            </select> <span class="bottom-transition"></span>
+        </div>
             <div class="input-box exp">
                 <input id="cvv" type="text" placeholder="CVV" required> <span class="bottom-transition"></span><br>
                 <label for="cvv">CVV</label>
