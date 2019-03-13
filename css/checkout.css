@@ -70,9 +70,11 @@ i {
     width: 60%;
     padding-left: 30px;
 }
-.input-box{
+
+.input-box {
     position: relative;
 }
+
 input {
     border: none;
     line-height: 2em;
@@ -81,20 +83,20 @@ input {
     margin-top: 40px;
     outline: none;
 }
-.input-box>label{
+
+.input-box>label {
     position: absolute;
-    left:0;
-    top:0;
-    padding-top:46px;
+    left: 0;
+    top: 0;
+    padding-top: 46px;
     font-size: 0.9em;
     transition: 0.1s;
     visibility: hidden;
 }
 
-.input-box>input:focus ~ label,
-.input-box>input:valid ~ label{
+.input-box>input:focus~label, .input-box>input:valid~label {
     visibility: visible;
-    top:-20px;
+    top: -20px;
     font-size: 1em;
 }
 
@@ -103,23 +105,54 @@ input {
     top:-20px;
     color:red;
 } */
-.input-box>input:focus::placeholder{
+
+.input-box>input:focus::placeholder {
     visibility: hidden;
 }
+
 .info-form>h4, p {
     margin-bottom: 0px;
 }
 
+.input-box {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.short-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .short {
     display: inline-block;
-    width: 49%;
+    width: 47%;
 }
-#bill-add ~ .add{
+
+.bottom-transition {
+    display: inline-block;
+    width: 0px;
+    height: 2px;
+    background: black;
+    position: relative;
+    top: -15px;
+    /* -webkit-transition: all ease-in-out .15s;
+  -o-transition: all ease-in-out .15s; */
+    transition: all ease-in-out .15s;
+}
+
+.input-box>input:focus+.bottom-transition {
+    width: 100%;
+}
+
+#bill-add~.add {
     visibility: hidden;
 }
-#bill-add:checked ~ .add{
-visibility: visible;
+
+#bill-add:checked~.add {
+    visibility: visible;
 }
+
 .dropdowns {
     width: 100%;
     border: none;
@@ -139,6 +172,7 @@ visibility: visible;
 .exp, .payment>input.exp {
     display: inline-block;
     width: 32%;
+    top:20px;
 }
 
 .product-name-price {

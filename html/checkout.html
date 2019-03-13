@@ -17,7 +17,9 @@
             <div class="menu-bar">
                 <p>&#9776;</p>
             </div>
-           <a href="../index.html"> <h3>SHOP</h3> </a>
+            <a href="../index.html">
+                <h3>SHOP</h3>
+            </a>
             <i style="font-size:22px" class="fa">&#xf07a;</i>
         </header>
 
@@ -30,32 +32,39 @@
             <form class="info-form">
                 <h4>Account Information</h4>
                 <div class="input-box">
-                        <input id="email" type="email" placeholder="Email" autofocus required> <br>
-                        <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Email" autofocus required> <span
+                        class="bottom-transition"></span><br>
+                    <label for="email">Email</label>
                 </div>
                 <div class="input-box">
-                        <input id="phone" type="text" placeholder="Phone" required><br>
-                        <label for="phone">Phone</label>
+                    <input id="phone" type="text" placeholder="Phone" required><span
+                        class="bottom-transition"></span><br>
+                    <label for="phone">Phone</label>
                 </div>
-                
+
                 <h4>Shipping Information</h4>
                 <div class="input-box">
-                        <input id="address" type="text" placeholder="Address" required> <br>
-                        <label for="address">Address</label>
+                    <input id="address" type="text" placeholder="Address" required><span
+                        class="bottom-transition"></span> <br>
+                    <label for="address">Address</label>
                 </div>
-               <div class="input-box">
-                    <input id="city" type="text" placeholder="City" required> <br>
+                <div class="input-box">
+                    <input id="city" type="text" placeholder="City" required> <span
+                        class="bottom-transition"></span><br>
                     <label for="city">City</label>
-               </div>
-                <div class="input-box short">
-                        <input id="state" type="text" placeholder="State/Province" required> <br>
+                </div>
+                <div class="short-container">
+                    <div class="input-box short">
+                        <input id="state" type="text" placeholder="State/Province" required><span
+                            class="bottom-transition"></span> <br>
                         <label for="state">State/Province</label>
-                </div>
-                <div class="input-box short">
-                        <input id="zip" type="text" placeholder="Zip/Postal code" required> <br>
+                    </div>
+                    <div class="input-box short">
+                        <input id="zip" type="text" placeholder="Zip/Postal code" required><span
+                            class="bottom-transition"></span> <br>
                         <label for="zip">Zip/Postal code</label>
+                    </div>
                 </div>
-                
                 <p>Country</p>
                 <select class="dropdowns" name="country" id="country">
                     <option value="US">United States</option>
@@ -63,59 +72,61 @@
                 </select>
                 <h4>Billing Address</h4>
                 <div class="diff-add">
-                <input id="bill-add" type="checkbox"> <label for="bill-add">Use different billing address</label>
-                <div class="add">
-                    <H1>Hello</H1>
+                    <input id="bill-add" type="checkbox"> <label for="bill-add">Use different billing address</label>
+                    <div class="add">
+                        <H1>Hello</H1>
+                    </div>
                 </div>
-                </div> 
-            <!-- </form> -->
+                <!-- </form> -->
         </div>
         <div class="payment">
             <!-- <form class="payment-form"> -->
-                <h4>Payment Method</h4>
-                <div class="input-box">
-                        <input id="cardholder" type="text" placeholder="Cardholder Name" required> <br>
-                        <label for="cardholder">Cardholder Name</label>
+            <h4>Payment Method</h4>
+            <div class="input-box">
+                <input id="cardholder" type="text" placeholder="Cardholder Name" required><span
+                    class="bottom-transition"></span> <br>
+                <label for="cardholder">Cardholder Name</label>
+            </div>
+            <div class="input-box">
+                <input id="cardnumber" type="text" placeholder="Card Number" required> <span
+                    class="bottom-transition"></span><br>
+                <label for="cardnumber">Card Number</label>
+            </div>
+
+            <p>Expiry</p>
+            <select class="exp dropdowns">
+                <option value="Jan">Jan</option>
+                <option value="Feb">Feb</option>
+                <option value="Mar">Mar</option>
+                <option value="Apr">Apr</option>
+                <option value="May">May</option>
+            </select>
+            <select class="exp dropdowns">
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+            </select>
+            <div class="input-box exp">
+                <input id="cvv" type="text" placeholder="CVV" required> <span class="bottom-transition"></span><br>
+                <label for="cvv">CVV</label>
+            </div>
+
+            <h4>Order Summary</h4>
+            <div class="order-summary">
+                <div class="product-name-price">
+                    <p>Anvil L/S Crew Neck - Grey</p>
+                    <p>$22.15</p>
                 </div>
-                <div class="input-box">
-                        <input id="cardnumber" type="text" placeholder="Card Number" required> <br>
-                        <label for="cardnumber">Card Number</label>
+                <div class="product-name-price">
+                    <p>Total</p>
+                    <p>$22.15</p>
                 </div>
-                
-                <p>Expiry</p>
-                <select class="exp dropdowns">
-                    <option value="Jan">Jan</option>
-                    <option value="Feb">Feb</option>
-                    <option value="Mar">Mar</option>
-                    <option value="Apr">Apr</option>
-                    <option value="May">May</option>
-                </select>
-                <select class="exp dropdowns">
-                    <option value="2016">2016</option>
-                    <option value="2017">2017</option>
-                    <option value="2018">2018</option>
-                    <option value="2019">2019</option>
-                    <option value="2020">2020</option>
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
-                </select>
-                <div class="input-box exp">
-                        <input id="cvv" type="text" placeholder="CVV" required> <br>
-                        <label for="cvv">CVV</label>
-                </div>
-                
-                <h4>Order Summary</h4>
-                <div class="order-summary">
-                    <div class="product-name-price">
-                        <p>Anvil L/S Crew Neck - Grey</p>
-                        <p>$22.15</p>
-                    </div>
-                    <div class="product-name-price">
-                        <p>Total</p>
-                        <p>$22.15</p>
-                    </div>
-                </div>
-                <input type="submit" value="Place Order">
+            </div>
+            <input type="submit" value="Place Order">
             </form>
         </div>
     </div>
