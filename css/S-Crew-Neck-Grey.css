@@ -110,6 +110,7 @@ ul{
     width: 100%;
     border: none;
     background: none;
+    outline:none;
 }
 
 .add-to-cart {

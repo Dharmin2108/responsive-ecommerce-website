@@ -15,6 +15,7 @@ header {
     display: flex;
     position: relative;
     justify-content: center;
+    /* font-weight: normal; */
 }
 
 header a {
@@ -46,6 +47,7 @@ i {
     /* justify-content: center; */
     align-items: center;
     padding-top: 30px;
+    margin-bottom: 20px;
 }
 
 .checkout-title>h3 {
@@ -81,8 +83,9 @@ input {
     line-height: 2em;
     border-bottom: 1px solid lightgray;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 30px;
     outline: none;
+    font-size: 1em;
 }
 
 .input-box>label {
@@ -101,14 +104,10 @@ input {
     font-size: 0.75em;
 }
 
-
-
-  
 /* .input-box>input:not(:empty) ~ label{
     visibility: hidden;
 } */
 
- 
 /*
 .input-box>input:valid ~ label{
     visibility: visible;
@@ -123,6 +122,7 @@ input {
 .info-form>h4, p, .payment>h4, p {
     margin-bottom: 0px;
     font-size: 13px;
+    margin-top: 40px;
 }
 
 .input-box {
@@ -153,7 +153,8 @@ input {
     right: 50%;
     transition: all ease-in-out .10s;
 }
-.bottom-transition-right{
+
+.bottom-transition-right {
     display: inline-block;
     width: 0px;
     height: 2px;
@@ -164,23 +165,23 @@ input {
     left: 50%;
     transition: all ease-in-out .10s;
 }
-.input-box>select{
-border:none;
-outline: none;
+
+.input-box>select {
+    border: none;
+    outline: none;
 }
-.input-box>input:focus+.bottom-transition-left,
-.input-box>input:focus~.bottom-transition-right,
-.input-box>select:focus+.bottom-transition-left,
-.input-box>select:focus~.bottom-transition-right
- {
+
+.input-box>input:focus+.bottom-transition-left, .input-box>input:focus~.bottom-transition-right, .input-box>select:focus+.bottom-transition-left, .input-box>select:focus~.bottom-transition-right {
     width: 50%;
 }
-#bill-add{
+
+#bill-add {
     height: 20px;
     width: 20px;
     position: relative;
     top: 4px;
 }
+
 #bill-add~.add {
     display: none;
 }
@@ -193,7 +194,11 @@ outline: none;
     width: 100%;
     border: none;
     background: none;
-    height: 2em;
+    height: 3em;
+}
+
+.diff-add {
+    margin-bottom: 20px;
 }
 
 .diff-add>input[type=checkbox] {
@@ -221,13 +226,12 @@ outline: none;
     border: 2px solid black;
     padding: 10px 0px;
 }
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-moz-outer-spin-button{
-  -webkit-appearance: none;
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
     -moz-appearance: none;
-  appearance:none;
-   }
+    appearance: none;
+}
 
 @media (max-width:767px) {
     .container {
